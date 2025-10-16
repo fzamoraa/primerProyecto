@@ -1,0 +1,21 @@
+    /* Estilos para el acordeón de preguntas */
+    .faq {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 10px;
+    background: #fff
+    }
+
+    .faq+.faq {
+    margin-top: 10px
+    }
+
+    .faq summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--blue-400)
+    }
+
+    .faq p {
+    margin: .4rem 0 0
+    }

@@ -1,0 +1,21 @@
+    /* Estilos para la lista de datos y el formulario */
+    .list {
+    list-style: none;
+    margin: 0;
+    padding: 0
+    }
+
+    .list li {
+    padding: 6px 0;
+    border-bottom: 1px dashed var(--border)
+    }
+
+    form input,
+    form select,
+    form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin: .25rem 0 .75rem
+    }

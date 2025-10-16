@@ -1,0 +1,34 @@
+    /* Estilos para la tabla de comparación y videos */
+    .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: .5rem 0
+    }
+
+    .table th,
+    .table td {
+    border: 1px solid var(--border);
+    padding: 8px;
+    text-align: left
+    }
+
+    .table thead {
+    background: #f1f5f9
+    }
+
+    .video {
+    position: relative;
+    padding-top: 56.25%;
+    /* 16:9 */
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden
+    }
+
+    .video iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0
+    }
