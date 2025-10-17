@@ -30,11 +30,12 @@
     </header>
 
     <main>
+        <h1>Nosotros</h1>
         <section class="section">
             <div class="container">
                 <h2>Nuestra Historia y Filosofía</h2>
                 <div class="grid grid-2">
-                    <div>
+                    <div class="Historia-Organizacion">
                         <h3>Historia y Organización</h3>
                         <p>
                             Dr Pixels SA nació en el <strong>2024</strong> con el objetivo de ofrecer soluciones LED de alta calidad
@@ -45,6 +46,7 @@
                             Nuestra organización se enfoca en la <strong>eficiencia operativa</strong> y el <strong>servicio al cliente</strong>
                             para asegurar tiempos de respuesta rápidos y una instalación impecable.
                         </p>
+                        <img src="./images/proceso-resultado.png" alt="proceso y resultado de reparación de pantallas LED">
                     </div>
                     <div>
                         <h3>Filosofía y Principales Ventajas (Servicios/Productos)</h3>
@@ -53,9 +55,9 @@
                             industrial para minimizar fallos y maximizar la vida útil de tu inversión.
                         </p>
                         <ul class="feature-list">
-                            <li><strong>Componentes Premium:</strong> Módulos y fuentes de marcas líderes que garantizan fiabilidad.</li>
-                            <li><strong>Soporte Local:</strong> Diagnóstico y reparación en el país por expertos, sin esperas largas por envíos internacionales.</li>
-                            <li><strong>Garantía Integral:</strong> Cobertura total en piezas, instalación y mano de obra en todos nuestros proyectos.</li>
+                            <li class="item-premium"><strong>Componentes Premium:</strong> Módulos y fuentes de marcas líderes que garantizan fiabilidad.</li>
+                            <li class="item-support"><strong>Soporte Local:</strong> Diagnóstico y reparación en el país por expertos, sin esperas largas por envíos internacionales.</li>
+                            <li class="item-guarantee"><strong>Garantía Integral:</strong> Cobertura total en piezas, instalación y mano de obra en todos nuestros proyectos.</li>
                         </ul>
                     </div>
                 </div>
@@ -93,17 +95,27 @@
                 <p class="lead">Nuestra experiencia abarca desde grandes fachadas hasta pequeños rótulos interiores. (Mínimo 3 productos/servicios)</p>
                 <div class="grid grid-3">
                     <figure class="project-card">
-                        <img src="./images/galeria_pantalla_exterior.jpg" alt="Pantalla LED exterior P6 instalada en edificio">
+                        <img src="./images/pantalla-funeraria.jpg" alt="Pantalla LED exterior P6 instalada en edificio">
                         <figcaption>Venta e Instalación LED Outdoor (P6 y P8)</figcaption>
                     </figure>
                     <figure class="project-card">
-                        <img src="./images/galeria_reparacion_modulo.jpg" alt="Mano de técnico reparando un módulo LED">
+                        <img src="./images/reparacion-modulo.jpg" alt="Mano de técnico reparando un módulo LED">
                         <figcaption>Soporte Técnico y Reparación de Módulos</figcaption>
                     </figure>
                     <figure class="project-card">
-                        <img src="./images/galeria_video_wall.jpg" alt="Video Wall LED de alta resolución en un lobby">
-                        <figcaption>Video Wall para Interiores (P2.5 y P4)</figcaption>
+                    <video src="./images/Antes-despues-disco.mp4" 
+                            autoplay 
+                            muted 
+                            loop 
+                            playsinline 
+                            preload="none"
+                            poster="./images/placeholder.jpg"  
+                            style="width: 60%; height: auto;">
+                        Tu navegador no soporta videos HTML5.
+                    </video>
+                    <figcaption>Diagnóstico y Mantenimiento de Floor Video Walls</figcaption>
                     </figure>
+
                 </div>
                 <p style="margin-top: 24px;">
                     <a class="btn btn-accent" href="proyectos.html">Ver más proyectos de éxito</a>
@@ -118,8 +130,7 @@
                 
                 <div class="video-container">
                     <video controls poster="./images/video_poster.jpg" aria-label="Video institucional de Dr Pixels SA">
-                        <source src="./videos/drpixels_institucional.mp4" type="video/mp4">
-                        <source src="./videos/drpixels_institucional.webm" type="video/webm">
+                        <source src="./images/Proceso-pantalla.mp4" type="video/mp4">
                         Tu navegador no soporta la etiqueta de video HTML5. Puedes ver el video en nuestro canal de YouTube.
                     </video>
                 </div>
@@ -132,7 +143,7 @@
                 <div class="grid grid-2">
                     <div class="testimonial-card">
                         <blockquote>
-                            "La instalación de nuestra pantalla fue rápida y profesional. El brillo es increíble, y la administración del contenido es muy sencilla. ¡Recomendados 100%!"
+                            "La instalación de nuestra pantalla fue rápida y profesional. El brillo es increíble, y la administración del contenido es muy sencilla con el plan de publicidad que ofrece Dr Pixels. ¡Recomendados 100%!"
                         </blockquote>
                         <footer>— Ricardo S., Gerente de Marketing, [Empresa de Retail]</footer>
                     </div>

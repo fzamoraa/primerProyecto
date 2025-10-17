@@ -1,95 +1,142 @@
-/* Estilos específicos para la página Nosotros.html */
-:root {
-  --blue-400: #1C3A65;
-  --blue-50: #A1C6E7;
-  --blue-100: #6A9BD1;
-  --text: #0b1220;
-  --card: #ffffff;
-  --border: #e5e7eb;
-  --radius: 14px;
+    /* Estilos específicos para la página Nosotros.html */
+    :root {
+    --blue-400: #1C3A65;
+    --blue-50: #A1C6E7;
+    --blue-100: #6A9BD1;
+    --text: #0b1220;
+    --card: #ffffff;
+    --border: #e5e7eb;
+    --radius: 14px;
+    }
+
+    h1{
+        color: var(--blue-400);
+        text-align: center;
+        margin-top: 2%;
+        transition: text-shadow 0.3s ease;
+    }
+    h1:hover {
+    text-shadow: var(--blue-400) 0 0 10px;
+    }
+    /* Sección de Ventajas/Servicios */
+    .feature-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .feature-list li {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 16px;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        transition: .15s box-shadow;
+    }
+
+    .feature-list li:hover {
+        box-shadow: 0 4px 12px rgba(2, 8, 23, .05);
+    }
+
+    .feature-list li strong {
+        color: var(--blue-400);
+    }
+
+    .Historia-Organizacion img {
+        gap: 32px;
+        border-radius: var(--radius);
+    }
+
+
+    .feature-list li::before {
+    content: ""; /* Es crucial que el content esté vacío */
+    display: block; 
+    
+    /* Define el tamaño del contenedor del ícono */
+    width: 24px;
+    min-width: 24px; /* Asegura que el flexbox no lo encoja */
+    height: 24px;
+    
+    /* Configuración de la imagen de fondo */
+    background-size: contain; /* Asegura que la imagen quepa */
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/* Sección de Ventajas/Servicios */
-.feature-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.feature-list li {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 16px;
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    transition: .15s box-shadow;
+.feature-list .item-premium::before {
+    /* **RUTA DE IMAGEN:** Asumiendo que las imágenes están en '../images/icons/' */
+    background-image: url('../images/caja-de-carton.png'); 
 }
 
-.feature-list li:hover {
-    box-shadow: 0 4px 12px rgba(2, 8, 23, .05);
+/* Ícono 2: Soporte Local (Ejemplo: herramienta.svg) */
+.feature-list .item-support::before {
+    /* **RUTA DE IMAGEN:** Asumiendo que las imágenes están en '../images/icons/' */
+    background-image: url('../images/herramientas.png'); 
 }
 
-.feature-list li strong {
-    color: var(--blue-400);
+/* Ícono 3: Garantía Integral (Ejemplo: escudo.svg) */
+.feature-list .item-guarantee::before {
+    /* **RUTA DE IMAGEN:** Asumiendo que las imágenes están en '../images/icons/' */
+    background-image: url('../images/garantia.png'); 
 }
 
-/* Sección de Galería de Proyectos (Usamos la misma clase project-card del index) */
-.project-card {
-    background: #fff;
-    border-radius: var(--radius);
-    overflow: hidden;
-    border: 1px solid var(--border);
-}
+    /* Sección de Galería de Proyectos (Usamos la misma clase project-card del index) */
+    .project-card {
+        background: #fff;
+        border-radius: var(--radius);
+        overflow: hidden;
+        border: 1px solid var(--border);
+    }
 
-.project-card img {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-}
+    .project-card img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
 
-.project-card figcaption {
-    padding: 12px;
-    font-size: .95rem;
-    color: var(--muted);
-    font-weight: 600;
-}
+    .project-card figcaption {
+        padding: 12px;
+        font-size: .95rem;
+        color: var(--muted);
+        font-weight: 600;
+    }
 
-/* Sección de Testimonios */
-.testimonial-card {
-    background: var(--blue-50); /* Usamos un azul claro para destacarlo */
-    color: var(--text);
-    padding: 24px;
-    border-radius: var(--radius);
-    border: 1px solid var(--blue-100);
-    box-shadow: 0 4px 12px rgba(2, 8, 23, .08);
-}
+    /* Sección de Testimonios */
+    .testimonial-card {
+        background: var(--blue-50); /* Usamos un azul claro para destacarlo */
+        color: var(--text);
+        padding: 24px;
+        border-radius: var(--radius);
+        border: 1px solid var(--blue-100);
+        box-shadow: 0 4px 12px rgba(2, 8, 23, .08);
+    }
 
-.testimonial-card blockquote {
-    margin: 0 0 10px 0;
-    font-style: italic;
-    font-size: 1.1rem;
-    line-height: 1.5;
-}
+    .testimonial-card blockquote {
+        margin: 0 0 10px 0;
+        font-style: italic;
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
 
-.testimonial-card footer {
-    font-weight: 600;
-    color: var(--blue-400);
-}
+    .testimonial-card footer {
+        font-weight: 600;
+        color: var(--blue-400);
+    }
 
-/* Estilo para el reproductor de video (HTML5) */
-.video-container {
-    max-width: 700px;
-    margin: 0 auto;
-    border-radius: var(--radius);
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
+    /* Estilo para el reproductor de video (HTML5) */
+    .video-container {
+        max-width: 700px;
+        margin: 0 auto;
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
 
-.video-container video {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+    .video-container video {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
