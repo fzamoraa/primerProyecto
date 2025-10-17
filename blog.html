@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Blog | Dr Pixels SA</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/blog-styles.css" /> <link rel="icon" type="image/png" href="assets/logo.png" />
-</head>
-<body>
+    <link rel="stylesheet" href="./css/blog-styles.css" />
+    <link rel="icon" type="image/png" href="./images/Logo.png" />
+    </head>
+    <body>
     <div class="topbar">
         WhatsApp: <a href="https://wa.me/50688315233">8831-5233</a> ·
         ventas@drpixels.net · Lun–Vie 9:00–18:00 · Sáb 9:00–16:30
@@ -15,60 +16,165 @@
 
     <header class="header">
         <a class="brand" href="index.html">
-            <img src="assets/logo.png" alt="Logo Dr Pixels SA">
-            <span>Dr Pixels SA</span>
+        <img src="./images/Logo.png" alt="Logo Dr Pixels SA" />
+        <span>Dr Pixels SA</span>
         </a>
         <nav class="nav">
-            <a href="index.html">Inicio</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="blog.html" class="active">Blog</a>
-            <a href="proyectos.html">Proyectos</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contacto.html" class="btn btn-accent">Cotizar</a>
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contacto.html" class="btn btn-accent">Cotizar</a>
         </nav>
     </header>
 
-    <main>
-        <section class="section">
-            <div class="container">
-                <h2>Blog</h2>
-                <p class="muted">Consejos y tutoriales prácticos.</p>
+    <main class="section">
+        <div class="container blog-layout">
+        <!--contenido principal -->
+        <div class="blog-main">
+            <h1>Bienvenido al Pixels Blog!</h1>
+            <p class="muted">
+            Aquí encontrarás <strong>tutoriales</strong>, <strong>consejos</strong> y <strong>opiniones</strong> para
+            sacar el máximo provecho a tus pantallas LED. Explora por categoría o abre
+            un artículo para leerlo completo y dejar tu comentario.
+            </p>
 
-                <div class="grid grid-2">
-                    <article class="card">
-                        <h3>Pantalla LED indoor vs outdoor: ¿Cuál elegir?</h3>
-                        <p>
-                            La elección depende del ambiente, la distancia de visión y el presupuesto. En interiores
-                            conviene un <strong>pitch</strong> fino (P2.5–P4) para texto nítido a corta distancia; en exteriores,
-                            se requiere <strong>alto brillo</strong> (3500–5000+ nits) y protección contra lluvia/polvo (IP65).
-                        </p>
-                        <table class="table">
-                            <thead>
-                                <tr><th>Uso</th><th>Pitch típico</th><th>Brillo</th><th>Protección</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>Indoor</td><td>P2.5–P4</td><td>800–1200 nits</td><td>IP20</td></tr>
-                                <tr><td>Outdoor</td><td>P6–P10</td><td>3500–5000+ nits</td><td>IP65</td></tr>
-                            </tbody>
-                        </table>
-                        <p class="muted">¿Dudas? Envíanos fotos y medidas del sitio por WhatsApp.</p>
-                    </article>
+            <!-- categorias -->
+            <h2 id="tutoriales">Tutoriales</h2>
+            <div class="grid grid-2">
+            <article class="card post-card">
+                <a class="post-thumb" href="articulo-pitch-pixel.html">
+                <img src="./images/pixel-pitch.jpg" alt="Guía de pitch de píxel" />
+                </a>
+                <div class="post-body">
+                <a class="badge">Tutoriales</a>
+                <h3><a href="articulo-pitch-pixel.html">Guía de pitch de píxel (P2, P3, P4…)</a></h3>
+                <p class="muted">
+                    ¿Qué es el pitch? ¿Cómo afecta a la nitidez y al presupuesto? Aprende a estimar la distancia
+                    de visión y a elegir el módulo correcto.
+                </p>
+                <a class="btn btn-outline" href="articulo-pitch-pixel.html">Leer artículo</a>
+                </div>
+            </article>
 
-                    <article class="card">
-                        <h3>Tutorial: limpieza y mantenimiento básico</h3>
-                        <p>Guía rápida para alargar la vida útil de tu pantalla LED (pasos simples y seguros).</p>
-                        <div class="video">
-                            <iframe
-                                src="https://www.youtube.com/embed/VIDEO_ID"
-                                title="Limpieza y mantenimiento básico de pantalla LED"
-                                allowfullscreen loading="lazy"></iframe>
-                        </div>
-                    </article>
+            <article class="card post-card">
+                <a class="post-thumb" href="articulo-mantenimiento.html">
+                <img src="./images/led-service.jpg" alt="Limpieza y mantenimiento" />
+                </a>
+                <div class="post-body">
+                <a class="badge">Tutoriales</a>
+                <h3><a href="articulo-mantenimiento.html">Limpieza y mantenimiento básico</a></h3>
+                <p class="muted">
+                    Pasos simples y seguros para alargar la vida útil de tu pantalla LED, con lista de materiales
+                    y video de referencia.
+                </p>
+                <a class="btn btn-outline" href="articulo-mantenimiento.html">Leer artículo</a>
+                </div>
+            </article>
+            </div>
 
-                    <article class="card">
-                        <h3>Tutorial: preparar tu contenido publicitario</h3>
-                        <p>Tips de formato, contraste y duración de loop para que tu anuncio se vea mejor.</p>
-                        <div class="video">
-                            <iframe
-                                src="
+            <h2 id="consejos">Consejos y Trucos</h2>
+            <div class="grid grid-2">
+            <article class="card post-card">
+                <a class="post-thumb" href="articulo-indoor-outdoor.html">
+                <img src="./images/LED-screen-outdoor-vs-indoor.webp" alt="Indoor vs Outdoor" />
+                </a>
+                <div class="post-body">
+                <a class="badge">Consejos</a>
+                <h3><a href="articulo-indoor-outdoor.html">Pantalla LED indoor vs outdoor: ¿Cuál elegir?</a></h3>
+                <p class="muted">
+                    Brillo, protección IP, pitch recomendado y presupuesto. Una guía clara para decidir
+                    en función del entorno y la distancia de visión.
+                </p>
+                <a class="btn btn-outline" href="articulo-indoor-outdoor.html">Leer artículo</a>
+                </div>
+            </article>
+
+            <article class="card post-card">
+                <a class="post-thumb" href="articulo-errores-compra.html">
+                <img src="./images/errores-LED.png" alt="Errores comunes al comprar pantalla LED" />
+                </a>
+                <div class="post-body">
+                <a class="badge">Consejos</a>
+                <h3><a href="articulo-errores-compra.html">Errores comunes al comprar una pantalla LED</a></h3>
+                <p class="muted">
+                    Lo que más se pasa por alto: potencia eléctrica, estructura, garantías y servicio post-venta.
+                </p>
+                <a class="btn btn-outline" href="articulo-errores-compra.html">Leer artículo</a>
+                </div>
+            </article>
+            </div>
+        </div>
+
+        <!-- sidebar -->
+        <aside class="sidebar">
+            <div class="widget">
+            <h4>Categorías</h4>
+            <ul class="cat-list">
+                <li><a href="#tutoriales">Tutoriales</a></li>
+                <li><a href="#consejos">Consejos y Trucos</a></li>
+            </ul>
+            </div>
+
+            <div class="widget">
+            <h4>Etiquetas</h4>
+            <div class="tags">
+                <a href="#">#LED</a>
+                <a href="#">#Pitch</a>
+                <a href="#">#Mantenimiento</a>
+                <a href="#">#IP65</a>
+                <a href="#">#Brillo</a>
+                <a href="#">#Instalación</a>
+            </div>
+            </div>
+        </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+        <div class="foot-column">
+            <div class="foot-brand">
+            <img src="./images/Logo.png" alt="Logo Dr Pixels SA" />
+            <p>Dr Pixels SA · Pantallas LED</p>
+            </div>
+            <p class="muted" style="margin-top: 10px;">
+            Especialistas en soluciones de visualización LED en Costa Rica.
+            </p>
+            <a class="btn btn-outline" href="https://wa.me/50688315233" style="margin-top: 12px;">WhatsApp 8831-5233</a>
+        </div>
+
+        <div class="foot-column">
+            <h4>Secciones</h4>
+            <nav class="foot-nav">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="blog.html">Blog</a>
+            <a href="proyectos.html">Proyectos</a>
+            </nav>
+        </div>
+
+        <div class="foot-column">
+            <h4>Síguenos</h4>
+            <ul class="social-links">
+            <li><a href="https://www.instagram.com/dr_pixels_cr" target="_blank" aria-label="Instagram"><img src="./images/instagram.png" alt="Instagram" style="width:24px; height:24px;"></a></li>
+            <li><a href="https://www.tiktok.com/@dr.pixels4" target="_blank" aria-label="TikTok"><img src="./images/tik-tok.png" alt="TikTok" style="width:24px; height:24px;"></a></li>
+            <li><a href="https://wa.me/50688315233" target="_blank" aria-label="WhatsApp"><img src="./images/whatsapp.png" alt="WhatsApp" style="width:24px; height:24px;"></a></li>
+            </ul>
+            <h4 style="margin-top: 24px;">Legal</h4>
+            <nav class="foot-nav">
+            <a href="faq.html">Preguntas Frecuentes</a>
+            <a href="contacto.html">Contactar</a>
+            </nav>
+        </div>
+        </div>
+
+        <div class="container">
+        <p class="legal">© 2025 Dr Pixels SA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    </body>
+    </html>

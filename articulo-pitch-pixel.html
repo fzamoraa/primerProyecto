@@ -1,0 +1,81 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Guía de Pitch de píxel | Blog Dr Pixels SA</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/blog-styles.css" />
+    <link rel="icon" type="image/png" href="./images/Logo.png" />
+    </head>
+    <body>
+    <div class="topbar">WhatsApp: <a href="https://wa.me/50688315233">8831-5233</a> · ventas@drpixels.net</div>
+
+    <header class="header">
+        <a class="brand" href="index.html"><img src="./images/Logo.png" alt=""><span>Dr Pixels SA</span></a>
+        <nav class="nav"><a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="blog.html" class="active">Blog</a><a href="contacto.html" class="btn btn-accent">Cotizar</a></nav>
+    </header>
+
+    <main class="section">
+        <article class="container post">
+        <header class="post-header">
+            <p class="badge">Tutoriales</p>
+            <h1>Guía de pitch de píxel (P2, P3, P4…)</h1>
+            <p class="meta muted">Tiempo de lectura: 6 min · Etiquetas:
+            <a class="tag" href="#">#Pitch</a> <a class="tag" href="#">#Resolución</a>
+            </p>
+            <img class="post-cover" src="./images/LED-display-pixel-pitch.webp" alt="Pitch de píxel">
+        </header>
+
+        <div class="post-content">
+            <p>
+            El <strong>pitch de píxel</strong> (P) es la distancia entre centros de dos píxeles adyacentes.
+            A menor valor, mayor densidad y mejor detalle a corta distancia, pero también mayor costo.
+            Una regla práctica es que la <u>distancia mínima de visión</u> (en metros) suele ser similar
+            al valor del pitch (en milímetros). Por ejemplo, una pantalla P3 se aprecia bien desde ~3 m.
+            Esta guía te ayudará a estimar el pitch ideal según tu caso de uso.
+            </p>
+
+            <h2>Relación pitch / distancia</h2>
+            <table class="table">
+            <thead><tr><th>Pitch</th><th>Distancia mínima sugerida</th><th>Uso típico</th></tr></thead>
+            <tbody>
+                <tr><td>P2</td><td>~2 m</td><td>Retail premium, salas de control</td></tr>
+                <tr><td>P3</td><td>~3 m</td><td>Salas de conferencia, auditorios</td></tr>
+                <tr><td>P4</td><td>~4 m</td><td>Lobby, centros comerciales</td></tr>
+                <tr><td>P6</td><td>~6 m</td><td>Exterior cercano, escenarios</td></tr>
+            </tbody>
+            </table>
+
+            <h3>Consejos rápidos</h3>
+            <ul>
+            <li><strong>Texto pequeño</strong> → pitch más bajo.</li>
+            <li><strong>Grandes distancias</strong> → puedes subir el pitch para ahorrar.</li>
+            <li>Considera el brillo requerido y la protección IP si es exterior.</li>
+            </ul>
+
+            <div class="post-gallery">
+            <img src="./images/LED-1515.avif" alt="Detalle de píxeles">
+            <img src="./images/concert-led.jpg" alt="Pantalla en escenario">
+            </div>
+
+            <p class="muted">¿No estás seguro? Mándanos el tamaño de tu área y la distancia promedio de visualización a nuestro <a href="https://wa.me/50688315233">WhatsApp</a>.</p>
+        </div>
+
+        <section class="comentarios">
+            <h4>Comentarios</h4>
+            <article class="comentario"><p><strong>María:</strong> Con esto elegí P3 para la sala de juntas y se ve perfecto.</p></article>
+            <form class="form-comentario" action="#" method="post">
+            <label for="p-nombre">Nombre</label>
+            <input id="p-nombre" name="nombre" type="text" required>
+            <label for="p-mensaje">Comentario</label>
+            <textarea id="p-mensaje" name="mensaje" rows="4" required></textarea>
+            <button class="btn btn-accent" type="submit">Enviar comentario</button>
+            </form>
+        </section>
+        </article>
+    </main>
+
+    <footer class="footer"><div class="container"><p class="legal">© 2025 Dr Pixels SA.</p></div></footer>
+    </body>
+    </html>
