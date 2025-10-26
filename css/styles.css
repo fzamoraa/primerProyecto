@@ -408,7 +408,8 @@
     /* Evita que el estilo de .active aumente la altura */
     .nav a.active {
         box-shadow: none;
-        outline: 2px solid var(--blue-400);
+        background-color: var(--blue-400);
+        color: #fff;
     }
 
     /* El botón se mantiene visible sin romper la fila */
@@ -421,4 +422,31 @@
         line-height: 1.4;
         font-size: 0.92rem;
     }
+    .nav a:hover {
+        outline: 2px solid var(--accent);
+        text-decoration: none;
     }
+    /*  Fix hero + alineación con header en móvil  */
+    @media (max-width: 768px) {
+    /* Reduce el hueco arriba del hero */
+    .section.hero {
+        padding: 34px 0 40px; /* antes 80px 0 */
+    }
+
+    /* el contenedor del hero ocupa todo el ancho y alinea con el header */
+    .section.hero .container {
+        display: block;                 /* quita inline-block */
+        width: 100%;
+        margin: 0;                      /* sin centrado por márgenes */
+        padding: 12px min(4vw, 24px);   /* mismos laterales que el header */
+        border-radius: 10px;            /* conserva estilo translúcido */
+    }
+
+    /* Bordes de la nav más sutiles y menos “banda blanca” visual */
+    .nav {
+        border-top-color: rgba(0,0,0,.06);
+        border-bottom-color: rgba(0,0,0,.06);
+    }
+    }
+
+}
