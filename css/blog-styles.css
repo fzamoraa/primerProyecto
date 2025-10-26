@@ -1,4 +1,4 @@
-        /* Estilos para la tabla de comparación y videos */
+        /* tabla de comparación y videos */
         .table {
         width: 100%;
         border-collapse: collapse;
@@ -35,12 +35,14 @@
 
 
 
-    /*  Blog: portada y tarjetas  */
+    /*  blog: portada y tarjetas  */
     .blog-layout {
     display: grid;
     grid-template-columns: 1fr 320px;
     gap: 24px;
     }
+
+    /* Responsivo */
     @media (max-width: 960px) {
     .blog-layout { grid-template-columns: 1fr; }
     }
@@ -53,13 +55,21 @@
     object-position: center;
     display: block;
     }
-        .post-card .post-thumb {
+    .post-card .post-thumb {
     aspect-ratio: 16/9;        /* Todas las miniaturas con misma proporción */
     overflow: hidden;
     border-radius: 10px;
     }    
     .post-card .post-body h3 { margin: 4px 0 6px; }
-    .badge { display: inline-block; font-size: .8rem; padding: 4px 8px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); }
+
+    .badge { 
+        display: inline-block; 
+        font-size: .8rem; 
+        padding: 4px 8px; 
+        border: 1px solid var(--border); 
+        border-radius: 999px; 
+        color: var(--muted); 
+    }
     .tag { margin-right: 6px; }
 
     /* Sidebar */
@@ -69,11 +79,12 @@
     .tags a { display:inline-block; margin: 4px 6px 0 0; padding: 4px 10px; border:1px solid var(--border); border-radius: 999px; font-size:.85rem; color: var(--muted); }
     .tags a:hover { color: var(--blue-400); }
 
-    /* ===== Artículo individual ===== */
+    /* ===== artículo individual ===== */
     .post-header .meta { margin: 6px 0 10px; }
     .post-cover { border-radius: 14px; border:1px solid var(--border); margin: 8px 0 14px; }
     .post-content h2, .post-content h3 { margin-top: 16px; }
-/* Galería responsive con captions */
+
+    /* Galería responsive con captions */
     .post-gallery {
     display: grid;
     /* Se auto-llena con columnas de mínimo 220px */
@@ -96,13 +107,9 @@
     height: auto;              /* mantiene proporción natural */
     display: block;
     border-radius: 10px;
-    /* Si quieres tarjetas uniformes, descomenta estas dos líneas:
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    */
     }
 
-    /* Caption legible y adaptable */
+    /* caption legible y adaptable */
     .post-gallery figcaption {
     font-size: clamp(.82rem, 1.6vw, .95rem);
     color: var(--muted);
@@ -110,7 +117,7 @@
     line-height: 1.35;
     }
 
-    /* Ajustes finos en móviles */
+    /* Responsive */
     @media (max-width: 640px) {
     .post-gallery {
         grid-template-columns: 1fr;   /* una columna en móviles */
@@ -121,7 +128,7 @@
     }
 
 
-    /* ===== Comentarios ===== */
+    /*  Comentarios  */
     .comentarios { margin-top: 26px; padding-top: 10px; border-top: 1px solid var(--border); }
     .comentario { background:#fff; border:1px solid var(--border); border-radius: 12px; padding: 10px 12px; margin-bottom: 10px; }
     .form-comentario { display: grid; gap: 8px; grid-template-columns: 1fr; }

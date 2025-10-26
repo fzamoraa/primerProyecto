@@ -1,4 +1,4 @@
-    /* ====== Variables (paleta Deep Blue + acento verde) ====== */
+    /*  Variables (paleta Deep Blue + acento verde)  */
     :root {
     --blue-50: #A1C6E7;
     --blue-100: #6A9BD1;
@@ -16,7 +16,7 @@
     --border: #e5e7eb;
     --radius: 14px;
     }
-    /* ====== Reset sencillo ====== */
+    /*  Reset */
     * {
     box-sizing: border-box
     }
@@ -33,7 +33,7 @@
     line-height: 1.6;
     }
 
-    /* ====== Elementos básicos ====== */
+    /*  Elementos básicos  */
     img {
     max-width: 100%;
     display: block
@@ -176,7 +176,7 @@
     .nav a.active {
         font-weight: 800;
         color: var(--blue-400);
-        box-shadow: 0 2px 0 var(--blue-400);
+        box-shadow: 3px 2px 0 var(--blue-400);
     }
 
 
@@ -207,7 +207,7 @@
 
     .btn-accent {
     background: var(--accent);
-    color: #0b1220
+    color: #0b1220;;
     }
 
     .btn-accent:hover {
@@ -254,10 +254,7 @@
     transform: translateY(-2px)
     }
 
-    /* ------------------------------------------- */
-    /* ESTILOS AÑADIDOS: Proyectos Destacados */
-    /* ------------------------------------------- */
-
+/*Proyectos destacados*/
     .project-card {
         background: #fff;
         border-radius: var(--radius);
@@ -279,9 +276,7 @@
         font-weight: 600;
     }
 
-    /* ------------------------------------------- */
-    /* ESTILOS AÑADIDOS: Footer Mejorado */
-    /* ------------------------------------------- */
+    /* Footer */
 
     .footer {
     border-top: 1px solid var(--border);
@@ -342,7 +337,7 @@
         padding-bottom: 12px;
     }
 
-    /* Estilos para Iconos de Redes Sociales (usando un emoji o texto simple) */
+    /* Estilos para Iconos de Redes Sociales */
     .social-links {
         display: flex;
         gap: 12px;
@@ -370,4 +365,13 @@
     :focus {
     outline: 3px solid var(--accent);
     outline-offset: 2px
+    }
+    .testimonios {
+    display: flex;
+    justify-content: center;
+    }
+
+    .testimonios.card {
+    max-width: 700px;
+    text-align: center;
     }
