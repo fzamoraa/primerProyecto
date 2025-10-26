@@ -97,7 +97,7 @@
     }
 
     .section.hero {
-    background-image: url(/images/led-concert-screen.webp);
+    background-image: url('../images/led-concert-screen.webp');
     background-repeat: no-repeat;
     background-position: right center;
     min-height: 400px; 
