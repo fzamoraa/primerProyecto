@@ -80,11 +80,11 @@
         <section class="comentarios">
             <h4>Comentarios</h4>
             <article class="comentario"><p><strong>Javier:</strong> Casi compro una opción sin IP65. Este post me salvó.</p></article>
-            <form class="form-comentario" action="#" method="post">
-            <label for="e-nombre">Nombre</label>
-            <input id="e-nombre" name="nombre" type="text" required>
-            <label for="e-mensaje">Comentario</label>
-            <textarea id="e-mensaje" name="mensaje" rows="4" required></textarea>
+            <form id="form-comentario" class="form-comentario" action="#" method="post">
+            <label for="p-nombre">Nombre</label>
+            <input id="p-nombre" name="nombre" type="text" required>
+            <label for="p-mensaje">Comentario</label>
+            <textarea id="p-mensaje" name="mensaje" rows="4" required></textarea>
             <button class="btn btn-accent" type="submit">Enviar comentario</button>
             <button class="btn" type="button"><a href="./blog.html">Volver al Blog</a></button>
             </form>
@@ -93,5 +93,10 @@
     </main>
 
     <footer class="footer"><div class="container"><p class="legal">© 2025 Dr Pixels SA.</p></div></footer>
+    <!-- Librería SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- script -->
+    <script src="js/script.js" type="text/javascript"></script>
     </body>
     </html>

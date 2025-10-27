@@ -90,11 +90,11 @@
             <article class="comentario">
             <p><strong>Carlos:</strong> Seguí los pasos y mejoró el brillo. El tip de la prueba RGB fue clave.</p>
             </article>
-            <form class="form-comentario" action="#" method="post">
-            <label for="m-nombre">Nombre</label>
-            <input id="m-nombre" name="nombre" type="text" required>
-            <label for="m-mensaje">Comentario</label>
-            <textarea id="m-mensaje" name="mensaje" rows="4" required></textarea>
+            <form id="form-comentario" class="form-comentario" action="#" method="post">
+            <label for="p-nombre">Nombre</label>
+            <input id="p-nombre" name="nombre" type="text" required>
+            <label for="p-mensaje">Comentario</label>
+            <textarea id="p-mensaje" name="mensaje" rows="4" required></textarea>
             <button class="btn btn-accent" type="submit">Enviar comentario</button>
             <button class="btn" type="button"><a href="./blog.html">Volver al Blog</a></button>
             </form>
@@ -103,5 +103,10 @@
     </main>
 
     <footer class="footer"><div class="container"><p class="legal">© 2025 Dr Pixels SA.</p></div></footer>
+    <!-- Librería SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- script -->
+    <script src="js/script.js" type="text/javascript"></script>
     </body>
     </html>
