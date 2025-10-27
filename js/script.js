@@ -2,7 +2,7 @@
     // Muestra una animación (SweetAlert2) al enviar el formulario de comentarios
 
     document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('form.form-comentario');
+    const form = document.querySelector('form.form-comentario')|| document.getElementById('form-comentario');
     if (!form) return;
 
     form.addEventListener('submit', function (e) {
@@ -12,7 +12,7 @@
         const mensajeEl = document.getElementById('p-mensaje');
 
         const nombre = (nombreEl?.value || '').trim() || 'Anónimo';
-        const mensaje = (mensajeEl?.value || '').trim();
+        const mensaje = (mensajeEl?.value || '').trim()|| 'Sin mensaje';
 
         // Animación de confirmación usando SweetAlert2
         Swal.fire({

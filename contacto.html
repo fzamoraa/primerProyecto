@@ -46,14 +46,14 @@
                         </ul>
                         <a class="btn btn-accent" href="https://wa.me/50688315233">Escribir ahora</a>
                     </div>
-                    <form class="card" aria-label="Formulario de contacto">
+                    <form id="form-comentario" class="card" aria-label="Formulario de contacto">
                         <h3>Escríbenos!</h3>
-                        <label for="nombre">Nombre</label>
-                        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
-                        <label for="correo">Correo</label>
-                        <input id="correo" name="correo" type="email" placeholder="tucorreo@ejemplo.com" required>
-                        <label for="telefono">Teléfono</label>
-                        <input id="telefono" name="telefono" type="tel" placeholder="8831-5233">
+                        <label for="p-nombre">Nombre</label>
+                        <input id="p-nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+                        <label for="p-correo">Correo</label>
+                        <input id="p-correo" name="correo" type="email" placeholder="tucorreo@ejemplo.com" required>
+                        <label for="p-telefono">Teléfono</label>
+                        <input id="p-telefono" name="telefono" type="tel" placeholder="8831-5233">
                         <label for="servicio">Servicio</label>
                         <select id="servicio" name="servicio" required>
                             <option value="">Elige una opción</option>
@@ -64,8 +64,8 @@
                             <option>Repuestos / Accesorios</option>
                             <option>Control de publicidad</option>
                         </select>
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué necesitas"></textarea>
+                        <label for="p-mensaje">Mensaje</label>
+                        <textarea id="p-mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué necesitas"></textarea>
                         <button class="btn btn-accent" type="submit">Enviar</button>
                         <p class="muted">* Respuesta en menos de 24 h hábiles.</p>
                     </form>
@@ -130,5 +130,10 @@
             <p class="legal">© 2025 Dr Pixels SA. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <!-- Librería SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- script -->
+    <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>
